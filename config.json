@@ -1,54 +1,29 @@
 {
   "public": {
     "default": {
-      "commerce-core-endpoint": "https://b2b-gncyehq-dsd5h5jrkyufa.us-5.magentosite.cloud/graphql",
-      "commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/QZyJvsohrq6MP95i6aqfEq/graphql",
-      "adobe-commerce-optimizer": true,
-      "commerce-assets-enabled": true,
+      "commerce-endpoint": "https://na1-qa.api.commerce.adobe.com/NjgG4soDt6VP1MriipZS3R/graphql",
       "headers": {
-        "all": {
-          "Store": "default"
-        },
         "cs": {
+          "AC-View-ID": "57a2c5bf-d0e2-4ee4-87fb-b2678e20a5f4"
         }
       },
+      "commerce-b2b-enabled": false,
+      "commerce-companies-enabled": false,
+      "commerce-assets-enabled": false,
+      "adobe-commerce-optimizer": true,
       "analytics": {
-        "base-currency-code": "USD",
+        "base-currency-code": "{{CURRENCY_CODE}}",
         "environment": "Testing",
-        "environment-id": "QZyJvsohrq6MP95i6aqfEq",
-        "locale": "en-US",
-        "store-url": "https://main--thunderbolts-aco--adobe-commerce.aem.live/",
-        "store-view-currency-code": "USD",
-        "storefront-template": "Other",
-        "view-id": "abb69090-2160-472f-a254-4bdfd34debb2"
+        "environment-id": "NjgG4soDt6VP1MriipZS3R",
+        "locale": "{{LOCALE}}",
+        "store-url": "{{STORE_URL}}",
+        "store-view-currency-code": "{{CURRENCY_CODE}}",
+        "storefront-template": "{{TEMPLATE_TYPE}}",
+        "view-id": "{{CATALOG_VIEW_ID}}"
       },
       "plugins": {
         "picker": {
-          "rootCategory": "2"
-        }
-      }
-    },
-    "/es/": {
-      "adobe-commerce-optimizer": true,
-      "commerce-assets-enabled": true,
-      "headers": {
-        "all": {
-          "Store": "spain"
-        },
-        "cs": {
-          "AC-View-ID": "e1be9401-fe5b-4c7b-90ec-f0297101d799"
-        }
-      }
-    },
-    "/ca/": {
-      "adobe-commerce-optimizer": true,
-      "commerce-assets-enabled": true,
-      "headers": {
-        "all": {
-          "Store": "catalan"
-        },
-        "cs": {
-          "AC-View-ID": "ef83d076-bd45-4e85-935f-5c5bc3bf6295"
+          "rootCategory": "{{ROOT_CATEGORY_ID}}"
         }
       }
     }
