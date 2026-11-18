@@ -4,6 +4,7 @@
       "commerce-endpoint": "https://na1-qa.api.commerce.adobe.com/NjgG4soDt6VP1MriipZS3R/graphql",
       "headers": {
         "cs": {
+          "Magento-Is-Preview": "true",
           "AC-View-ID": "57a2c5bf-d0e2-4ee4-87fb-b2678e20a5f4"
         }
       },
